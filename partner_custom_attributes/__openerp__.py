@@ -29,6 +29,7 @@
  'description': """
 Partner custom attributes
 =========================
+Update for ver 8.0
 
 This module adds the possibility to easily create custom fields on Partners.
 Each partner can be linked to an attribute set.  Each attribute has custom
@@ -39,7 +40,7 @@ GUILLOT, Akretion
 
 """,
  'complexity': 'normal',
- 'author': "Camptocamp,Odoo Community Association (OCA)",
+ 'author': 'Camptocamp',
  'website': 'http://www.camptocamp.com/',
  'depends': ['base_custom_attributes'],
  'data': ['partner_view.xml',
@@ -47,6 +48,6 @@ GUILLOT, Akretion
           'wizard/open_partner_by_attribute_set.xml'
           ],
  'test': ['test/partner_attribute_test.yml'],
- 'installable': False,
- 'active': False,
+ 'installable': True,
+ 'active': True,
  }

@@ -23,7 +23,7 @@
       <field name="name">partner.attributes.normal.wizard</field>
       <field name="model">res.partner</field>
       <field name="arch" type="xml">
-        <form string="partner" version="7.0">
+        <form string="partner" version="8.0">
           <group name="name_set">
             <field name="name"/>
             <field name="attribute_set_id" />

@@ -1,13 +1,11 @@
-# Translation of OpenERP Server.
+# Translation of Odoo Server.
 # This file contains the translation of the following modules:
 #	* product_gtin
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 7.0\n"
+"Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-10 22:04+0000\n"
-"PO-Revision-Date: 2014-06-10 22:04+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -19,7 +17,7 @@ msgstr ""
 #: constraint:product.packaging:0
 #: constraint:product.product:0
 #: constraint:res.partner:0
-msgid "Error: Invalid EAN code"
+msgid "Error: Invalid EAN/GTIN code"
 msgstr ""
 
 #. module: product_gtin
@@ -35,5 +33,11 @@ msgstr ""
 #. module: product_gtin
 #: model:ir.model,name:product_gtin.model_product_product
 msgid "Product"
+msgstr ""
+
+#. module: product_gtin
+#: view:product.product:product_gtin.product_search_form_view
+#: view:product.template:product_gtin.product_template_search_view
+msgid "['|', '|', ('default_code','ilike',self),('name','ilike',self), ('ean13','ilike',self)]"
 msgstr ""
 

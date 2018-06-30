@@ -8,10 +8,12 @@ Odoo Product Attribute
 Various addons related to attribute management for products.
 
 [//]: # (addons)
+
 Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
+[customer_pricing_in_product_view](customer_pricing_in_product_view/) | 8.0.1.2.1 | Display Customer Price in Product View
 [pricelist_item_generator](pricelist_item_generator/) | 8.0.1.0.0 | Create/Update Pricelist Items in a massive way
 [pricelist_per_product](pricelist_per_product/) | 8.0.1.0.0 | Pricelist Per Product
 [product_attribute_multi_type](product_attribute_multi_type/) | 8.0.1.0.0 | Product attribute types
@@ -20,20 +22,23 @@ addon | version | summary
 [product_code_builder](product_code_builder/) | 8.0.0.0.1 | Create product references according to attributes
 [product_code_builder_sequence](product_code_builder_sequence/) | 8.0.0.0.1 | Product Code Builder Sequence
 [product_custom_info](product_custom_info/) | 8.0.1.0.0 | Add custom field in products
-[product_dimension](product_dimension/) | 8.0.2.0.0 | Product Dimension
+[product_dimension](product_dimension/) | 8.0.2.0.1 | Product Dimension
 [product_gtin](product_gtin/) | 8.0.1.1.0 | Product GTIN EAN8 EAN13 UPC JPC Support
 [product_m2mcategories](product_m2mcategories/) | 8.0.1.0.2 | Product - Many Categories
 [product_manufacturer](product_manufacturer/) | 8.0.1.0.0 | Products Manufacturers
-[product_multi_image](product_multi_image/) | 8.0.2.0.0 | Multiple Images in Products
+[product_multi_image](product_multi_image/) | 8.0.2.0.1 | Multiple Images in Products
+[product_pricelist_cache](product_pricelist_cache/) | 8.0.1.0.0 | Cache product prices
 [product_pricelist_fixed_price](product_pricelist_fixed_price/) | 8.0.1.0.1 | Fixed price in pricelists
 [product_profile](product_profile/) | 8.0.1.0.2 | Allow to configure a product in 1 click
 [product_profile_example](product_profile_example/) | 8.0.1.0.1 | Product Profile Use Case
 [product_sequence](product_sequence/) | 8.0.0.1.0 | Product Sequence
 [product_standard_price_tax_included](product_standard_price_tax_included/) | 8.0.1.0.0 | Brings a Cost Price Field Tax Included on Product Model
 [product_supplierinfo_for_customer](product_supplierinfo_for_customer/) | 8.0.1.0.0 | Use product supplier info for customers too
+[product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 8.0.1.0.0 | Product supplier info for customer - sale
 [product_supplierinfo_tree_price_info](product_supplierinfo_tree_price_info/) | 8.0.0.1.0 | Supplier Unit Price on Product Form
 [product_variant_inactive](product_variant_inactive/) | 8.0.0.0.0 | Product Variant Inactive
 [product_weight](product_weight/) | 8.0.0.2.0 | Allows to calculate products weight from its components.
+
 
 Unported addons
 ---------------

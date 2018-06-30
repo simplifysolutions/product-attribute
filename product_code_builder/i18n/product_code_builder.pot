@@ -6,8 +6,6 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-30 12:40+0000\n"
-"PO-Revision-Date: 2016-03-30 12:40+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,6 +19,7 @@ msgid "Attribute"
 msgstr ""
 
 #. module: product_code_builder
+#: field:product.product,auto_default_code:0
 #: field:product.template,auto_default_code:0
 msgid "Automatic Reference"
 msgstr ""
@@ -32,14 +31,14 @@ msgid "Code"
 msgstr ""
 
 #. module: product_code_builder
-#: help:product.template,prefix_code:0
-msgid "Code of the product.\n"
-"If Automatic Reference is checked, this field is used as prefix of the Internal Reference of the product variant"
+#: field:product.attribute.value,comment:0
+msgid "Comment"
 msgstr ""
 
 #. module: product_code_builder
-#: field:product.attribute.value,comment:0
-msgid "Comment"
+#: code:addons/product_code_builder/models/product.py:100
+#, python-format
+msgid "Default can no be set manually as the product is configured to have a computed code"
 msgstr ""
 
 #. module: product_code_builder
@@ -48,8 +47,9 @@ msgid "For each Attribute we must be found a unique 'code'"
 msgstr ""
 
 #. module: product_code_builder
+#: help:product.product,auto_default_code:0
 #: help:product.template,auto_default_code:0
-msgid "Generate Internal Reference automatically according to attribute codes"
+msgid "Generate a reference automatically based on attribute codes"
 msgstr ""
 
 #. module: product_code_builder
@@ -58,12 +58,18 @@ msgid "Group by..."
 msgstr ""
 
 #. module: product_code_builder
+#: field:product.product,prefix_code:0
 #: field:product.template,prefix_code:0
 msgid "Internal Reference"
 msgstr ""
 
 #. module: product_code_builder
-#: model:ir.actions.client,name:product_code_builder.action_adhoc_menu
+#: field:product.product,manual_default_code:0
+msgid "Manual default code"
+msgstr ""
+
+#. module: product_code_builder
+#: model:ir.actions.client,name:product_code_builder.action_open_adhoc_menu
 msgid "Open Menu"
 msgstr ""
 
@@ -83,14 +89,25 @@ msgid "Product Template"
 msgstr ""
 
 #. module: product_code_builder
-#: field:product.attribute,sequence:0
-#: field:product.attribute.line,sequence:0
-msgid "Sequence"
+#: sql_constraint:product.template:0
+msgid "The reference must be unique"
+msgstr ""
+
+#. module: product_code_builder
+#: help:product.product,prefix_code:0
+#: help:product.template,prefix_code:0
+msgid "This is the code of the product modelIf Automatic Reference is checked, this field is used as a prefix for the product variant reference.\n"
+"In case that there is only one variant this code is the same as the code of the uniq variant"
 msgstr ""
 
 #. module: product_code_builder
 #: sql_constraint:product.attribute:0
 msgid "With each Attribute we must be found a unique 'code'"
+msgstr ""
+
+#. module: product_code_builder
+#: help:product.product,manual_default_code:0
+msgid "hidden field"
 msgstr ""
 
 #. module: product_code_builder
